@@ -5,7 +5,11 @@ b.addEventListener("click", function(){
 let img1 = document.getElementById("Heroe");
 let ingreso = document.getElementById("entrada").value;
 
-
+if(ingreso>0 && ingreso<=731){
+    alert("Ingreso Válido");
+}else{
+    alert("Por favor ingresar numero válido (1 - 731)");
+}
 
 fetch("https://www.superheroapi.com/api.php/5097b85a9557dc7a49614f9d5575ca28/"+ingreso)
 .then(r=>r.json())
@@ -26,7 +30,7 @@ document.getElementById("texto8").innerText ="Alianzas: " + d.biography.aliases;
 
 
 
-//Grafico de Estadisticas
+//Grafico de Estadisticas, sacado de Canvas
 
     var options = {
         title: {
@@ -53,7 +57,6 @@ document.getElementById("texto8").innerText ="Alianzas: " + d.biography.aliases;
     $("#chartContainer").CanvasJSChart(options);
     
     
-
 
 })
     

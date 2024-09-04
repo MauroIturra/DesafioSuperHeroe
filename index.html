@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-    <!-- Barra navegacion -->
+    <!-- Barra de navegacion -->
     <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
         <div class="container">
         <a class="navbar-brand" href="#">
@@ -17,7 +17,7 @@
         </a>
         </div>
     </nav>
-    <!-- Formulario Buscar -->
+    <!-- Seccion Busqueda -->
     <div class="container">
         <div class="row">
             <div class="col-3"></div>
@@ -31,25 +31,36 @@
             <div class="col-3"></div>
         </div>
     </div>
-    <!-- Resultado -->
+    <!-- Resultado Busqueda -->
     <div class="container">
-        <div class="row">
-            <div class="col-3 mt-5">
-                <h6 id="Encontrado" class="DatosHeroeNombre"></h6>
-                <img id="Heroe" class="imagenHeroe mb-5">
-            </div>
-            <div class="col-4 mt-5">
-                <h6 id="texto" class="DatosHeroeNombre"></h6>
-                <p id="texto2" class="DatosHeroeConex"></p>
-                <p id="texto3" class="DatosHeroe ms-2"></p> 
-                <p id="texto4" class="DatosHeroe ms-2"></p>                
-                <p id="texto5" class="DatosHeroe ms-2"></p>
-                <p id="texto6" class="DatosHeroe ms-2"></p>
-                <p id="texto7" class="DatosHeroe ms-2"></p>
-                <p id="texto8" class="DatosHeroe ms-2"></p>
-                
+        <div class="row">          
+            <div class="col-7 mt-5">
+                <!-- Card -->
+                <div class="card mb-3" style="max-width: 100%;">
+                    <div class="row g-0">
+                    <div class="col-md-4">
+                        <p id="Encontrado" class="SuperEncontrado mt-4"></p>
+                        <img id="Heroe" class="imagenHeroe mb-5">
+                    </div>
+                    <div class="col-md-8">                       
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li id="texto" class="list-group-item DatosHeroeNombre"></li>
+                                <li id="texto2" class="list-group-item DatosHeroeConex"></li>
+                                <li id="texto3" class="list-group-item DatosHeroe ms-2"></li>
+                                <li id="texto4" class="list-group-item DatosHeroe ms-2"></li>
+                                <li id="texto5" class="list-group-item DatosHeroe ms-2"></li>
+                                <li id="texto6" class="list-group-item DatosHeroe ms-2"></li>
+                                <li id="texto7" class="list-group-item DatosHeroe ms-2"></li>
+                                <li id="texto8" class="list-group-item DatosHeroe ms-2"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    </div>
+                </div>
             </div>  
-            <div class="col-5">                
+            <div class="col-5">  
+                <!-- Grafico Stats-->              
                 <div id="chartContainer" class="mt-5" style="height: 300px; width: 100%;"></div>
             </div>          
         </div>
@@ -57,7 +68,7 @@
 
     
     
-    <!-- Script -->
+    <!-- Script Usados-->
 
     <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>  
     <script type="text/javascript" src="https://cdn.canvasjs.com/jquery.canvasjs.min.js"></script>
