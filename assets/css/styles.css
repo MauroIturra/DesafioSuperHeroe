@@ -6,4 +6,15 @@
 .entrada-super{
     width: 100%;
 }
-
+.Encontrado{
+    font-size: 15pt;
+}
+.DatosHeroeNombre{
+    font-size: 13pt;
+}
+.DatosHeroeConex{
+    font-size: 12pt;
+}
+.DatosHeroe{
+    font-size: 11pt;
+}
